@@ -65,12 +65,14 @@ For feature suggestions:
 ## Development Guidelines
 
 ### Commit Message Style
+
 Use present tense and imperative mood:
 - ✅ `Add README with setup instructions`
 - ✅ `Fix typo in CONTRIBUTING.md`
 - ❌ `Added README` or `Adding feature`
 
 ### Code Quality
+
 - Keep changes focused and small
 - Follow existing patterns in the codebase
 - Add comments when something might not be obvious
