@@ -52,7 +52,7 @@ For feature suggestions:
 5. Commit your changes:
    ```bash
    git add .
-   git commit -m "Add clear, descriptive message"
+   git commit -m "Add a clear, descriptive message"
    ```
 
 6. Push to your fork:
