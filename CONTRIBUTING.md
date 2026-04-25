@@ -23,7 +23,7 @@ If you find a bug, please create an issue with:
 - A clear title describing the problem
 - Steps to reproduce the issue
 - Expected vs actual behavior
-- Your environment (browser, OS, etc.)
+- Your environment (browser, OS, etc.) - Make sure to include your browser type, operating system, and any relevant configuration
 
 ### Suggesting Enhancements
 
