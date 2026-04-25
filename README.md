@@ -1,11 +1,11 @@
-# Test Good First Issues Repository
+# 测试优质初学者问题仓库
 
-This is a test repository for demonstrating good first issue workflows.
+这是一个演示优质初学者问题工作流的测试仓库。
 
-## Contributing
+## 贡献指南
 
-Please read CONTRIBUTING.md for details on our code of conduct and the process for submitting pull requests.
+请阅读 CONTRIBUTING.md 了解我们的行为准则和提交拉取请求的流程详情。
 
-## License
+## 许可证
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+本项目采用 MIT 许可证 - 详细信息请参阅 LICENSE 文件。
