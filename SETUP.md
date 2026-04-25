@@ -1,81 +1,113 @@
-# Setup Instructions
+# Setup Instructions for Contributors
 
-This document provides detailed setup instructions for developers who want to contribute to this project.
+Welcome! This document provides detailed setup instructions for developers who want to contribute to this project.
 
 ## Prerequisites
 
-Before you begin, ensure you have the following installed:
+Before you begin, make sure you have the following installed on your system:
 
-- **Git** (version 2.0 or higher)
-- **A GitHub account**
-- **Basic text editor** (VS Code, Sublime Text, etc.)
+### Git
+- **Git version 2.20 or higher**
+- Download from: https://git-scm.com/downloads
+
+### GitHub Account
+- A free GitHub account (sign up at https://github.com)
+- Make sure you can create repositories and pull requests
 
 ## Development Environment Setup
 
 ### 1. Fork the Repository
+First, fork this repository to your GitHub account:
+1. Go to https://github.com/q404365631/test-good-first-issues
+2. Click the "Fork" button in the top right corner
+3. Select your account as the destination
 
-1. Visit the repository on GitHub
-2. Click the "Fork" button in the top-right corner
-3. Select your personal account as the destination
-
-### 2. Clone Your Fork
-
+### 2. Clone Your Fork Locally
 ```bash
-git clone https://github.com/your-username/test-good-first-issues.git
+git clone https://github.com/YOUR_USERNAME/test-good-first-issues.git
 cd test-good-first-issues
 ```
 
-### 3. Configure Git
+Replace `YOUR_USERNAME` with your actual GitHub username.
 
+### 3. Set Up Upstream Remote
+To keep your fork synchronized with the original repository:
 ```bash
-git config --global user.name "Your Name"
-git config --global user.email "your.email@example.com"
+git remote add upstream https://github.com/q404365631/test-good-first-issues.git
+```
+
+You can verify your remotes with:
+```bash
+git remote -v
 ```
 
 ### 4. Create a Feature Branch
-
+Always create a new branch for your changes:
 ```bash
-git checkout -b my-feature-branch
+git checkout -b your-branch-name
+```
+Good branch names include:
+- `fix-typo-in-contributing`
+- `add-setup-instructions`
+- `translate-readme-to-chinese`
+
+## Making Changes
+
+### Working with Files
+This repository contains markdown files (.md). You can edit them using any text editor or IDE.
+
+### Common Commands
+```bash
+# Check status of your changes
+git status
+
+# Add files to staging area
+git add filename.md
+
+# Commit your changes
+git commit -m "Add clear, descriptive commit message"
+
+# Push to your fork
+git push origin your-branch-name
 ```
 
-### 5. Make Your Changes
+## Running Tests
 
-Edit files using your preferred text editor:
+This repository doesn't require special testing, but you can verify your changes by:
 
-```bash
-# Open files in VS Code
-code README.md
+1. Reading through the files to ensure they look correct
+2. Making sure you haven't introduced any obvious errors
+3. Following the contribution guidelines in CONTRIBUTING.md
 
-# Or use any other editor
-nano CONTRIBUTING.md
-```
+## Creating a Pull Request
 
-### 6. Commit Your Changes
-
-```bash
-git add .
-git commit -m "Add meaningful commit message describing your changes"
-```
-
-### 7. Push to Your Fork
-
-```bash
-git push origin my-feature-branch
-```
-
-### 8. Create a Pull Request
+When you're ready to submit your changes:
 
 1. Go to your fork on GitHub
 2. You should see a "Compare & pull request" button
-3. Click it and follow the instructions
-4. Add a descriptive title and detailed description
-5. Submit the pull request!
+3. Fill out the pull request template
+4. Submit the pull request!
+
+## Keeping Your Fork Updated
+
+To sync your fork with the original repository:
+```bash
+# Fetch changes from upstream
+git fetch upstream
+
+# Merge changes into your local main branch
+git checkout main
+git merge upstream/main
+
+# Push to your fork
+git push origin main
+```
 
 ## Getting Help
 
 If you need help:
-- Check the [CONTRIBUTING.md](CONTRIBUTING.md) file
-- Look at existing issues and pull requests
-- Ask questions in the comments of relevant issues
+1. Read the CONTRIBUTING.md file first
+2. Look at existing issues and pull requests for examples
+3. Ask questions in the issue tracker
 
-Happy coding! 🚀
+Happy contributing! 🎉
